@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="منصة STEP Academy 2026 - احترافية لاختبار تحديد المستوى STEP مع تحليل ذكي وخطط مذاكرة مخصصة">
+    <meta name="keywords" content="STEP, اختبار ستيب, تحديد المستوى, دورات انجليزي, أكاديمية عايد">
+    <meta name="author" content="STEP Academy 2026">
+    <meta name="theme-color" content="#D4AF37">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="STEP 2026">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="STEP Academy 2026 - أكاديمية ستيب">
+    <meta property="og:description" content="اختبار تحديد المستوى الذكي مع خطط مذاكرة مخصصة">
+    <meta property="og:image" content="/icons/icon-512x512.png">
+    
+    <title>STEP Academy 2026 - أكاديمية ستيب | اختبار تحديد المستوى</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-72x72.png">
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Install PWA Banner -->
+    <div id="installBanner" class="install-banner hidden">
+        <div class="install-content">
+            <i class="fas fa-download"></i>
+            <div class="install-text">
+                <h4>ثبّت التطبيق</h4>
+                <p>للحصول على أفضل تجربة</p>
+            </div>
+            <button id="installBtn" class="btn-install">تثبيت</button>
+            <button id="dismissInstall" class="btn-dismiss">&times;</button>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="logo-loader">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h2 class="loading-text">STEP Academy 2026</h2>
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <i class="fas fa-graduation-cap brand-icon"></i>
+                    <div class="brand-text">
+                        <h1>STEP Academy</h1>
+                        <span>2026</span>
+                    </div>
+                </div>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#features" class="nav-link">المميزات</a></li>
+                    <li><a href="#courses" class="nav-link">الدورات</a></li>
+                    <li><a href="#testimonials" class="nav-link">التقييمات</a></li>
+                    <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+                    <li><a href="dashboard.html" class="nav-link"><i class="fas fa-user-circle"></i> حسابي</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="animated-bg"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>أكثر من 100,000 طالب اجتازوا STEP معنا</span>
+                </div>
+                <h2 class="hero-title">
+                    حقق حلمك في 
+                    <span class="highlight">اختبار STEP</span>
+                </h2>
+                <p class="hero-description">
+                    منصة احترافية متكاملة لاختبار تحديد المستوى مع تحليل ذكي وخطط مذاكرة مخصصة لكل طالب
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-trophy"></i>
+                        <div>
+                            <h3>95%</h3>
+                            <p>نسبة النجاح</p>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <h3>100K+</h3>
+                            <p>طالب متميز</p>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-book"></i>
+                        <div>
+                            <h3>100+</h3>
+                            <p>نموذج تدريبي</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="captcha.html" class="btn btn-primary">
+                        <i class="fas fa-play-circle"></i>
+                        ابدأ اختبار تحديد المستوى
+                    </a>
+                    <a href="#courses" class="btn btn-secondary">
+                        <i class="fas fa-book-open"></i>
+                        تصفح الدورات
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">لماذا نحن؟</span>
+                <h2 class="section-title">مميزات منصة STEP Academy</h2>
+                <p class="section-description">نقدم لك تجربة تعليمية متميزة مع أحدث التقنيات</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>اختبار ذكي</h3>
+                    <p>نظام تحديد مستوى ذكي يتكيف مع قدراتك ويقيّم مهاراتك بدقة في Grammar, Reading, Listening</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>تحليل شامل</h3>
+                    <p>تقارير تفصيلية وتحليل دقيق لأدائك مع رسوم بيانية توضح نقاط القوة والضعف</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>خطة مذاكرة</h3>
+                    <p>خطة مذاكرة مخصصة لك بناءً على نتائج اختبارك لتحسين أدائك</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>دورات متنوعة</h3>
+                    <p>3 باقات تدريبية تناسب جميع المستويات: الأساسية، المتقدمة، VIP</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>نظام النقاط</h3>
+                    <p>اكسب نقاط وشارات إنجاز وتنافس مع الطلاب الآخرين</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>برنامج الإحالة</h3>
+                    <p>احصل على مكافآت قيمة عند دعوة أصدقائك للمنصة</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>PWA</h3>
+                    <p>ثبّت التطبيق على جهازك واستخدمه حتى بدون إنترنت</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>مساعد ذكي</h3>
+                    <p>Chatbot يجيب على استفساراتك على مدار الساعة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Preview -->
+    <section id="courses" class="courses-preview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">دوراتنا</span>
+                <h2 class="section-title">اختر الباقة المناسبة لك</h2>
+                <p class="section-description">3 باقات مصممة لتحقيق هدفك في اختبار STEP</p>
+            </div>
+            <div class="courses-grid">
+                <!-- Basic Package -->
+                <div class="course-card">
+                    <div class="course-badge">الأكثر شعبية</div>
+                    <div class="course-header">
+                        <i class="fas fa-book"></i>
+                        <h3>الباقة الأساسية</h3>
+                        <div class="price">
+                            <span class="currency">ر.س</span>
+                            <span class="amount">299</span>
+                        </div>
+                    </div>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> 15 محاضرة تعليمية</li>
+                        <li><i class="fas fa-check"></i> 30 نموذج تدريبي</li>
+                        <li><i class="fas fa-check"></i> ملف 1300 كلمة</li>
+                        <li><i class="fas fa-check"></i> دعم فني</li>
+                        <li><i class="fas fa-check"></i> شهادة إتمام</li>
+                    </ul>
+                    <a href="courses.html" class="btn btn-outline">التفاصيل</a>
+                </div>
+
+                <!-- Advanced Package -->
+                <div class="course-card featured">
+                    <div class="course-badge">الأفضل قيمة</div>
+                    <div class="course-header">
+                        <i class="fas fa-star"></i>
+                        <h3>الباقة المتقدمة</h3>
+                        <div class="price">
+                            <span class="currency">ر.س</span>
+                            <span class="amount">599</span>
+                        </div>
+                    </div>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> 25 محاضرة تعليمية</li>
+                        <li><i class="fas fa-check"></i> 50 نموذج تدريبي</li>
+                        <li><i class="fas fa-check"></i> متابعة أسبوعية</li>
+                        <li><i class="fas fa-check"></i> جلسات Q&A</li>
+                        <li><i class="fas fa-check"></i> مكتبة موارد</li>
+                        <li><i class="fas fa-check"></i> أولوية دعم</li>
+                    </ul>
+                    <a href="courses.html" class="btn btn-primary">التفاصيل</a>
+                </div>
+
+                <!-- VIP Package -->
+                <div class="course-card">
+                    <div class="course-badge vip">VIP حصري</div>
+                    <div class="course-header">
+                        <i class="fas fa-crown"></i>
+                        <h3>الباقة VIP</h3>
+                        <div class="price">
+                            <span class="currency">ر.س</span>
+                            <span class="amount">999</span>
+                        </div>
+                    </div>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> 35 محاضرة تعليمية</li>
+                        <li><i class="fas fa-check"></i> 100 نموذج تدريبي</li>
+                        <li><i class="fas fa-check"></i> مستشار خاص</li>
+                        <li><i class="fas fa-check"></i> جلسات فردية</li>
+                        <li><i class="fas fa-check"></i> ضمان النجاح</li>
+                        <li><i class="fas fa-check"></i> دعم VIP 24/7</li>
+                        <li><i class="fas fa-check"></i> محتوى حصري</li>
+                    </ul>
+                    <a href="courses.html" class="btn btn-outline">التفاصيل</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">آراء طلابنا</span>
+                <h2 class="section-title">قصص النجاح</h2>
+                <p class="section-description">اكتشف تجارب الطلاب الذين حققوا أهدافهم معنا</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4>أفنان فيصل عابد</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"شكراً لكم على المجهود الرائع! المحاضرات واضحة والشرح ممتاز. حصلت على 85 في STEP"</p>
+                    <div class="score">درجة: 85/100</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4>تمارا</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"الله يسهل عليكم حياتكم مثل ما سهلتوا علينا STEP 🥹 منصة احترافية ونتائج مذهلة"</p>
+                    <div class="score">درجة: 92/100</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4>محمد خالد الغامدي</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"ما أقول إلا الله يجزاكم الخير. دورة ممتازة وشرح مفهوم بطريقة سهلة ومبسطة"</p>
+                    <div class="score">درجة: 88/100</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>هل أنت مستعد لتحقيق حلمك؟</h2>
+                <p>ابدأ الآن مع اختبار تحديد المستوى المجاني واحصل على خطة مذاكرة مخصصة</p>
+                <a href="captcha.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-rocket"></i>
+                    ابدأ الآن مجاناً
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">تواصل معنا</span>
+                <h2 class="section-title">لديك استفسار؟</h2>
+                <p class="section-description">نحن هنا لمساعدتك في تحقيق أهدافك</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>البريد الإلكتروني</h4>
+                            <a href="mailto:stepacademy438@gmail.com">stepacademy438@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>الهاتف</h4>
+                            <a href="tel:+966577607222">0577607222</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>الموقع</h4>
+                            <p>المملكة العربية السعودية</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h3>STEP Academy</h3>
+                            <span>2026</span>
+                        </div>
+                    </div>
+                    <p>منصة احترافية لاختبار STEP مع تحليل ذكي وخطط مذاكرة مخصصة</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#features">المميزات</a></li>
+                        <li><a href="courses.html">الدورات</a></li>
+                        <li><a href="captcha.html">الاختبار</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>الدعم</h4>
+                    <ul>
+                        <li><a href="#contact">تواصل معنا</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 STEP Academy. جميع الحقوق محفوظة</p>
+                <p>Built with <i class="fas fa-heart"></i> for Saudi Students</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <i class="fas fa-robot"></i>
+            <span>المساعد الذكي</span>
+            <button id="closeChatbot"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="bot-message">
+                مرحباً بك في STEP Academy! 👋<br>
+                كيف يمكنني مساعدتك اليوم؟
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatInput" placeholder="اكتب سؤالك هنا...">
+            <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <button id="chatbotToggle" class="chatbot-toggle">
+        <i class="fas fa-comments"></i>
+        <span class="chat-badge">1</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="/js/app.js"></script>
+</body>
+</html>
