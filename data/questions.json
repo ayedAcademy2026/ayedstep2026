@@ -1,0 +1,88 @@
+{
+  "grammar": [
+    {
+      "id": "g1",
+      "question": "She ____ to the library every weekend.",
+      "options": ["go", "goes", "going", "gone"],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "الفعل المضارع البسيط مع ضمير المفرد الغائب يأخذ s"
+    },
+    {
+      "id": "g2",
+      "question": "If I ____ you, I would accept the offer.",
+      "options": ["am", "was", "were", "be"],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "في الشرط الثاني نستخدم were مع جميع الضمائر"
+    },
+    {
+      "id": "g3",
+      "question": "The project ____ by next Monday.",
+      "options": ["will complete", "will be completed", "completes", "completing"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "المبني للمجهول في المستقبل"
+    },
+    {
+      "id": "g4",
+      "question": "He has been working here ____ 2020.",
+      "options": ["for", "since", "from", "until"],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "since تستخدم مع نقطة زمنية محددة"
+    },
+    {
+      "id": "g5",
+      "question": "Neither John nor his friends ____ present.",
+      "options": ["was", "were", "is", "been"],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "الفعل يتبع الفاعل الأقرب وهو friends (جمع)"
+    }
+  ],
+  "reading": [
+    {
+      "id": "r1",
+      "passage": "Artificial Intelligence is transforming industries worldwide. From healthcare to education, AI applications are becoming increasingly sophisticated. Experts predict that by 2030, AI will be integrated into most aspects of daily life.",
+      "question": "What is the main idea of the passage?",
+      "options": [
+        "AI is dangerous",
+        "AI is transforming multiple sectors",
+        "AI will replace humans",
+        "AI is only for healthcare"
+      ],
+      "correct": 1,
+      "difficulty": "medium"
+    },
+    {
+      "id": "r2",
+      "passage": "The Renaissance was a period of cultural rebirth in Europe spanning from the 14th to the 17th century. It marked a revival of interest in classical learning and values.",
+      "question": "The Renaissance refers to:",
+      "options": [
+        "A political movement",
+        "A cultural rebirth",
+        "A war period",
+        "An economic crisis"
+      ],
+      "correct": 1,
+      "difficulty": "easy"
+    }
+  ],
+  "listening": [
+    {
+      "id": "l1",
+      "audio": "https://www.soundjay.com/buttons/sounds/button-09.mp3",
+      "question": "What is being discussed?",
+      "options": [
+        "Weather forecast",
+        "Sports news",
+        "Travel plans",
+        "Academic schedule"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "transcript": "The final exams will be held from June 15th to June 25th. Students are advised to check the schedule online."
+    }
+  ]
+}
